@@ -179,7 +179,7 @@ export const clothesData = [
   },
   {
     link: "/product/634496e06f9e038211cf44ef\n",
-    title: "xms elf pants",
+    title: "xmas elf pants",
   },
   {
     link: "/product/634497206f9e038211cf44f1\n",
