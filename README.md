@@ -1,4 +1,4 @@
-A simple e-Commerce page, where you can see different sections and what products there are. You can sort products, put them to your cart and then make a payment.
+A simple e-Commerce page, where you can see different sections and what products there are. You can sort products, put them to your cart and then make a payment
 
 All products and their info is coming from MongoDB.
 You can register and sign in. All info is coming/going thru MongoDB.
