@@ -286,18 +286,3 @@ const AllCategories = () => {
 };
 
 export default AllCategories;
-
-
-
-// const Button = styled.button`
-//   border: solid 1px #683a41;
-//   background: transparent;
-//   padding: 10px 15px;
-//   color: #683a41;
-//   cursor: pointer;
-//   font-weight: 500;
-//   ${tablet({ marginBottom: "10px" })};
-//   ${smallTablet({ marginBottom: "10px" })};
-//   ${bigmobile({ marginBottom: "10px" })};
-//   ${mobile({ marginBottom: "10px" })};
-// `;
