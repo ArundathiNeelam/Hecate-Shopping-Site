@@ -139,7 +139,7 @@ export const clothesData = [
   },
   {
     link: "/product/63494085d0b68841619020b0\n",
-    title: "acdc pasifier",
+    title: "acd pasifier",
   },
   {
     link: "/product/634941b3d0b68841619020b7\n",
