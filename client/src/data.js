@@ -175,7 +175,7 @@ export const clothesData = [
   },
   {
     link: "/product/63493f1ad0b68841619020a7\n",
-    title: "acdc bibs",
+    title: "acd bibs",
   },
   {
     link: "/product/634496e06f9e038211cf44ef\n",
