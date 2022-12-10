@@ -7,7 +7,7 @@ const {
 
 const router = require("express").Router();
 
-//CREATE
+//Create
 
 router.post("/", verifyToken, async (req, res) => {
   const newCart = new Cart(req.body);
@@ -20,7 +20,7 @@ router.post("/", verifyToken, async (req, res) => {
   }
 });
 
-//UPDATE
+//Update
 router.put("/:id", verifyTokenAndAuthorization, async (req, res) => {
   try {
     const updatedCart = await Cart.findByIdAndUpdate(
@@ -36,7 +36,7 @@ router.put("/:id", verifyTokenAndAuthorization, async (req, res) => {
   }
 });
 
-//DELETE
+//Delete
 router.delete("/:id", verifyTokenAndAuthorization, async (req, res) => {
   try {
     await Cart.findByIdAndDelete(req.params.id);
@@ -46,7 +46,7 @@ router.delete("/:id", verifyTokenAndAuthorization, async (req, res) => {
   }
 });
 
-//GET USER CART
+//Get user to cart
 // or id?
 router.get("/find/:userid", verifyTokenAndAuthorization, async (req, res) => {
   try {
@@ -57,7 +57,7 @@ router.get("/find/:userid", verifyTokenAndAuthorization, async (req, res) => {
   }
 });
 
-// //GET ALL
+// //Get all
 
 router.get("/", verifyTokenAndAdmin, async (req, res) => {
   try {

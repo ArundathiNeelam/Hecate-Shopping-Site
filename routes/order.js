@@ -7,7 +7,7 @@ const {
 
 const router = require("express").Router();
 
-//CREATE
+//Create
 
 router.post("/", verifyToken, async (req, res) => {
   const newOrder = new Order(req.body);
@@ -20,7 +20,7 @@ router.post("/", verifyToken, async (req, res) => {
   }
 });
 
-//UPDATE
+//Update
 router.put("/:id", verifyTokenAndAdmin, async (req, res) => {
   try {
     const updatedOrder = await Order.findByIdAndUpdate(
@@ -36,7 +36,7 @@ router.put("/:id", verifyTokenAndAdmin, async (req, res) => {
   }
 });
 
-//DELETE
+//Delete
 router.delete("/:id", verifyTokenAndAdmin, async (req, res) => {
   try {
     await Order.findByIdAndDelete(req.params.id);
@@ -46,7 +46,7 @@ router.delete("/:id", verifyTokenAndAdmin, async (req, res) => {
   }
 });
 
-//GET USER ORDERS
+//user orders
 router.get("/find/:userId", verifyTokenAndAuthorization, async (req, res) => {
   try {
     const orders = await Order.find({ userId: req.params.userId });
@@ -56,7 +56,7 @@ router.get("/find/:userId", verifyTokenAndAuthorization, async (req, res) => {
   }
 });
 
-//GET ALL
+//Get all
 
 router.get("/", verifyTokenAndAdmin, async (req, res) => {
   try {
@@ -67,7 +67,7 @@ router.get("/", verifyTokenAndAdmin, async (req, res) => {
   }
 });
 
-//GET MONTHLY INCOME
+// income
 router.get("/income", verifyTokenAndAdmin, async (req, res) => {
   const productId = req.query.pid;
   const date = new Date();
