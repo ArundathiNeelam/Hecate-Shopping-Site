@@ -215,7 +215,7 @@ export const clothesData = [
   },
   {
     link: "/product/63493ea2d0b68841619020a6\n",
-    title: "i listen to metal Shirt",
+    title: "I listen to metal Shirt",
   },
   {
     link: "/product/63493e6bd0b68841619020a5\n",
